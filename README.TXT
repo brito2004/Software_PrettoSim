@@ -1,7 +1,11 @@
-ola galera do pÂth, hoje vamo testar o Maisikou ta ligado?
+PRIMEIRA SPRINT!!!!!!!!
 
-podemos fazer mais um teste?
+SSS01 - O sistema DEVE permitir o cadastro dos barbeiros
 
-mais um nengue!!!
+Informações necessárias de cadastros:
+- Nome completo
+- CPF
+- Endereço
+- Vulgo (a ser divulgado)
+- Especialidade (a ser divulgado)
 
-Manuela
