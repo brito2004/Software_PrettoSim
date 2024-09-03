@@ -4,6 +4,10 @@ from app.models import Cliente
 
 @app.route('/')
 def home():
+    return render_template('login.html')
+
+@app.route('/cadastro', methods=['GET'])
+def home():
     return render_template('cadastro.html')
 
 @app.route('/cadastro', methods=['POST'])

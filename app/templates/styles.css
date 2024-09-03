@@ -62,9 +62,10 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.02);
 }
