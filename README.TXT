@@ -1,11 +1,17 @@
-PRIMEIRA SPRINT!!!!!!!!
+SEGUNDA SPRINT!!!!!!!!
 
-SSS01 - O sistema DEVE permitir o cadastro dos barbeiros
+SSS02 - o sistema DEVE permitir cadastro de clientes.
+SSS03 - O sistema DEVE garantir login e senhas únicos seguindo as Leis Gerais de Proteção de Dados (LGPD).
 
 Informações necessárias de cadastros:
 - Nome completo
 - CPF
 - Endereço
-- Vulgo (a ser divulgado)
-- Especialidade (a ser divulgado)
+- telefone
+- email
+- senha
+- confirmação de senha
 
+Informações necessárias de login
+- email
+- senha
