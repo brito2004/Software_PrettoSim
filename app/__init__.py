@@ -1,5 +1,10 @@
 from flask import Flask
+from flask_mysqldb import MySQL
+from .config import Config
 
 app = Flask(__name__)
+app.config.from_object(Config)
 
-from app import views
+mysql = MySQL(app)
+
+from .controllers import *

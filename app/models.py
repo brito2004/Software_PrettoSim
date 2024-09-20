@@ -1,7 +1,7 @@
-class Cliente:
-    def __init__(self, nome_completo, cpf, endereco, apelido, especialidade):
-        self.nome_completo = nome_completo
+class Barber:
+    def __init__(self, full_name, cpf, address, nickname, specialty):
+        self.full_name = full_name
         self.cpf = cpf
-        self.endereco = endereco
-        self.apelido = apelido
-        self.especialidade = especialidade
+        self.address = address
+        self.nickname = nickname
+        self.specialty = specialty
