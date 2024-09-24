@@ -1,17 +1,12 @@
-SEGUNDA SPRINT!!!!!!!!
+TERCEIRA SPRINT!!!!!!!!
 
-SSS02 - o sistema DEVE permitir cadastro de clientes.
-SSS03 - O sistema DEVE garantir login e senhas únicos seguindo as Leis Gerais de Proteção de Dados (LGPD).
+SSS04 - O sistema DEVE permitir que o cliente consulte o dia e hora disponíveis do barbeiro.
+REQ. EXTRA - Adicionar API ViaCEP em ambas telas de cadastro. 
+REQ. EXTRA - Conectar todas as telas. (Infraestrutura do Software) 
 
-Informações necessárias de cadastros:
-- Nome completo
-- CPF
-- Endereço
-- telefone
-- email
-- senha
-- confirmação de senha
+A utilizar:
+- API google Calendar
+- API ViaCEP
 
-Informações necessárias de login
-- email
-- senha
+Link do KANBAN:
+https://aluno-team-a4hc99wf.atlassian.net/jira/software/projects/SP/boards/2
