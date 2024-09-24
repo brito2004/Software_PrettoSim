@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Barbeiro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Editar Barbeiro</h1>
+
+    <form method="POST">
+        <label for="full_name">Nome Completo:</label>
+        <input type="text" id="full_name" name="full_name" value="{{ barber['full_name'] }}" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" value="{{ barber['cpf'] }}" required>
+
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" value="{{ barber['address'] }}">
+
+        <label for="nickname">Vulgo:</label>
+        <input type="text" id="nickname" name="nickname" value="{{ barber['nickname'] }}">
+
+        <label for="specialty">Especialidade:</label>
+        <input type="text" id="specialty" name="specialty" value="{{ barber['specialty'] }}">
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
