@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Agendamentos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Agendamentos</h1>
+        <a href="{{ url_for('create_appointment') }}" class="add-button">Novo Agendamento</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Barbeiro</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for appointment in appointments %}
+                <tr>
+                    <td>{{ appointment[0] }}</td>
+                    <td>{{ appointment[1] }}</td>
+                    <td>{{ appointment[2] }}</td>
+                    <td>{{ appointment[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Agendamento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Agendamento</h1>
+
+        <form method="POST">
+            <label for="client_id">Cliente:</label>
+            <select id="client_id" name="client_id" required>
+                <option value="">Selecione um Cliente</option>
+                {% for client in clients %}
+                    <option value="{{ client[0] }}">{{ client[1] }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="barber_id">Barbeiro:</label>
+            <select id="barber_id" name="barber_id" required>
+                <option value="">Selecione um Barbeiro</option>
+                {% for barber in barbers %}
+                    {% if barber[0] and barber[1] %}
+                        <option value="{{ barber[0] }}">{{ barber[1] }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+
+            <label for="service_time">Horário de Atendimento:</label>
+            <input type="datetime-local" id="service_time" name="service_time" required>
+
+            <button type="submit">Criar Agendamento</button>
+        </form>
+    </div>
+</body>
+</html>
